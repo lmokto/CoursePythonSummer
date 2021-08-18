@@ -14,11 +14,12 @@ for i in range(10):
         processNumber(0)
 
 
-def customException(arg):
+def custom_exception(arg):
     try:
         arg.upper()
     except Exception:
-        print("Error in arg %s" %arg)
-    finally: print("Value processed %s" %arg)
+        print("Error in arg %s" % arg)
+    finally:
+        print("Value processed %s" % arg)
 
-customException(0)
+custom_exception(0)
